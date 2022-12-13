@@ -23,7 +23,8 @@ namespace CatYearsXamlCb
 
         public TextBlock ResultTextBlock;
         public TextBox InputCatAge;
-        public TextBlock UserQuestion; 
+        public TextBlock UserQuestion;
+        public StackPanel MainVerticalStackPanel; 
         public MainWindow()
         {
             InitializeComponent();
@@ -64,7 +65,7 @@ namespace CatYearsXamlCb
             HorizontalStackPanel.Children.Add(InputCatAge);
 
             // Creating a New Stack Pannel //
-            StackPanel MainVerticalStackPanel = new StackPanel();
+            MainVerticalStackPanel = new StackPanel();
             MainVerticalStackPanel.Children.Add(HorizontalStackPanel);
             MainVerticalStackPanel.Children.Add(ResultTextBlock);
             MainVerticalStackPanel.Children.Add(backgroundImage);
@@ -95,10 +96,14 @@ namespace CatYearsXamlCb
                     else
                     {
                         ResultTextBlock.Text = $"Your Cat is Super Old!!!";
+
                     }
+                    TextBlock myExtraText = new TextBlock() { Text = "Under the Cat", FontSize = 18 }; 
+                    MainVerticalStackPanel.Children.Add(myExtraText);
+
 
                 }
-                catch(Exception exc)
+                catch (Exception exc)
                 {
                     MessageBox.Show("Not a valid number, please enter a numeric value! " + exc.Message); 
                 }
