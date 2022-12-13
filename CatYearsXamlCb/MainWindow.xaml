@@ -6,7 +6,28 @@
         xmlns:local="clr-namespace:CatYearsXamlCb"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
-    </Grid>
+    
+    <StackPanel Orientation="Vertical">
+        <StackPanel Orientation="Horizontal">
+            <TextBlock 
+                Text="How old is your cat? (years)"
+                FontSize="18" />
+            <TextBox
+                x:Name="InputCatAge"
+                KeyDown="InputCatAge_KeyDown"
+                Width="120"
+                Margin="5,0,0,0"
+                TextAlignment ="Center"
+                FontSize="16"
+                >
+
+            </TextBox>
+        </StackPanel>
+        <TextBlock
+            Name="ResultTextBlock"
+            Text="Your Cat is..."
+            FontSize="18"
+            />
+        <Image Source="/images/cats.jpg" />
+    </StackPanel>
 </Window>

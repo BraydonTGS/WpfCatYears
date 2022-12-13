@@ -24,5 +24,37 @@ namespace CatYearsXamlCb
         {
             InitializeComponent();
         }
+
+        private void InputCatAge_KeyDown(object sender, KeyEventArgs e)
+        {
+            if(e.Key == Key.Enter)
+            {
+                try
+                {
+                    int inputCatAge = Int32.Parse(InputCatAge.Text);
+                    string resultHumanAge = "";
+
+                    if (inputCatAge >= 0 && inputCatAge <= 1)
+                    {
+                        resultHumanAge = "0-15";
+                        ResultTextBlock.Text = $"Your cat is {resultHumanAge} years old";
+                    }
+                    else if (inputCatAge >= 2 && inputCatAge < 25)
+                    {
+                        resultHumanAge = (((inputCatAge - 2) * 4) + 24).ToString();
+                        ResultTextBlock.Text = $"Your cat is {resultHumanAge} years old";
+                    }
+                    else
+                    {
+                        ResultTextBlock.Text = $"Your Cat is Super Old!!!";
+                    }
+
+                }
+                catch(Exception exc)
+                {
+                    MessageBox.Show("Not a valid number, please enter a numeric value! " + exc.Message); 
+                }
+            }
+        }
     }
 }

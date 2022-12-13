@@ -1,0 +1,16 @@
+C:\Users\brayd\Documents\repos\CatYearsXamlCb\CatYearsXamlCb\bin\Debug\CatYearsXamlCb.exe.config
+C:\Users\brayd\Documents\repos\CatYearsXamlCb\CatYearsXamlCb\bin\Debug\CatYearsXamlCb.exe
+C:\Users\brayd\Documents\repos\CatYearsXamlCb\CatYearsXamlCb\bin\Debug\CatYearsXamlCb.pdb
+C:\Users\brayd\Documents\repos\CatYearsXamlCb\CatYearsXamlCb\obj\Debug\CatYearsXamlCb.csproj.AssemblyReference.cache
+C:\Users\brayd\Documents\repos\CatYearsXamlCb\CatYearsXamlCb\obj\Debug\CatYearsXamlCb.csproj.SuggestedBindingRedirects.cache
+C:\Users\brayd\Documents\repos\CatYearsXamlCb\CatYearsXamlCb\obj\Debug\MainWindow.g.cs
+C:\Users\brayd\Documents\repos\CatYearsXamlCb\CatYearsXamlCb\obj\Debug\App.g.cs
+C:\Users\brayd\Documents\repos\CatYearsXamlCb\CatYearsXamlCb\obj\Debug\CatYearsXamlCb_MarkupCompile.cache
+C:\Users\brayd\Documents\repos\CatYearsXamlCb\CatYearsXamlCb\obj\Debug\CatYearsXamlCb_MarkupCompile.lref
+C:\Users\brayd\Documents\repos\CatYearsXamlCb\CatYearsXamlCb\obj\Debug\MainWindow.baml
+C:\Users\brayd\Documents\repos\CatYearsXamlCb\CatYearsXamlCb\obj\Debug\CatYearsXamlCb.g.resources
+C:\Users\brayd\Documents\repos\CatYearsXamlCb\CatYearsXamlCb\obj\Debug\CatYearsXamlCb.Properties.Resources.resources
+C:\Users\brayd\Documents\repos\CatYearsXamlCb\CatYearsXamlCb\obj\Debug\CatYearsXamlCb.csproj.GenerateResource.cache
+C:\Users\brayd\Documents\repos\CatYearsXamlCb\CatYearsXamlCb\obj\Debug\CatYearsXamlCb.csproj.CoreCompileInputs.cache
+C:\Users\brayd\Documents\repos\CatYearsXamlCb\CatYearsXamlCb\obj\Debug\CatYearsXamlCb.exe
+C:\Users\brayd\Documents\repos\CatYearsXamlCb\CatYearsXamlCb\obj\Debug\CatYearsXamlCb.pdb
