@@ -5,8 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CatYearsXamlCb"
         mc:Ignorable="d"
+        Name="MyMainWindow"
         Title="MainWindow" Height="450" Width="800">
-    
+    <!-- Using XAML Components
     <StackPanel Orientation="Vertical">
         <StackPanel Orientation="Horizontal">
             <TextBlock 
@@ -30,4 +31,7 @@
             />
         <Image Source="/images/cats.jpg" />
     </StackPanel>
+    -->
+    
+    
 </Window>

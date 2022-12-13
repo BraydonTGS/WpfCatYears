@@ -20,9 +20,57 @@ namespace CatYearsXamlCb
     /// </summary>
     public partial class MainWindow : Window
     {
+
+        public TextBlock ResultTextBlock;
+        public TextBox InputCatAge;
+        public TextBlock UserQuestion; 
         public MainWindow()
         {
             InitializeComponent();
+
+            // Set up our UI in the Main Window CTOR // 
+
+            // Created a new BackGround Image //
+            Image backgroundImage = new Image()
+            {
+                Source = new BitmapImage(
+                new Uri(Environment.CurrentDirectory + @"\..\..\Images\cats.jpg", UriKind.RelativeOrAbsolute))
+            };
+
+            // Creating a Text Block and a Text Box //
+            ResultTextBlock = new TextBlock() { Text = "Your cat is ", FontSize = 18 };
+
+            InputCatAge = new TextBox()
+            {
+                Width = 120,
+                TextAlignment = TextAlignment.Center,
+                FontSize = 18,
+                Margin = new Thickness(5, 0, 0, 0)
+            };
+
+            InputCatAge.KeyDown += InputCatAge_KeyDown;
+
+            // New Text Block for User Input //
+            UserQuestion = new TextBlock() { Text = "How old is your cat? ", FontSize = 18 };
+
+            StackPanel HorizontalStackPanel = new StackPanel()
+            {
+                Orientation = Orientation.Horizontal,
+                Margin = new Thickness(1, 5, 0, 0)
+            }; 
+
+            // These will now be inside the HorizonalStackPanel //
+            HorizontalStackPanel.Children.Add(UserQuestion);
+            HorizontalStackPanel.Children.Add(InputCatAge);
+
+            // Creating a New Stack Pannel //
+            StackPanel MainVerticalStackPanel = new StackPanel();
+            MainVerticalStackPanel.Children.Add(HorizontalStackPanel);
+            MainVerticalStackPanel.Children.Add(ResultTextBlock);
+            MainVerticalStackPanel.Children.Add(backgroundImage);
+
+
+            MyMainWindow.Content = MainVerticalStackPanel;
         }
 
         private void InputCatAge_KeyDown(object sender, KeyEventArgs e)
